@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">10.53% </span>
+                <span class="strong">93.75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/19</span>
+                <span class='fraction'>15/16</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.11% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/18</span>
+                <span class='fraction'>14/15</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -78,80 +78,56 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">20x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-const ValidateAnISBN = <span class="fstat-no" title="function not covered" >(I</span>SBN) =&gt; {
-    const Value = <span class="cstat-no" title="statement not covered" >ISBN.replace(/-/g, '');</span>
-    
-<span class="cstat-no" title="statement not covered" >    if(Value === 10){</span>
-        const Digit = <span class="cstat-no" title="statement not covered" >Array.from(Value);</span>
-<span class="cstat-no" title="statement not covered" >        Digit.reverse();</span>
-        let sum = <span class="cstat-no" title="statement not covered" >0;</span>
-        let Counter = <span class="cstat-no" title="statement not covered" >1;</span>
-<span class="cstat-no" title="statement not covered" >            for (let i = <span class="cstat-no" title="statement not covered" >0;</span> i &lt; Digit.length; i++) {</span>
-                let Position = <span class="cstat-no" title="statement not covered" >Digit[i] * Counter;</span>
-<span class="cstat-no" title="statement not covered" >                sum += Position;</span>
-<span class="cstat-no" title="statement not covered" >                Counter++;</span>
+<span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">const ValidateAnISBN10 = (ISBN) =&gt; {
+    const Value = ISBN.replace(/-/g, '');
+       
+    const Digit = Array.from(Value);
+        Digit.reverse();
+        let sum = 0;
+        let Counter = 1;
+            for (let i = 0; i &lt; Digit.length; i++) {
+                let Position = Digit[i] * Counter;
+                sum += Position;
+                Counter++;
             }
-            let DivisionResult = <span class="cstat-no" title="statement not covered" >sum % 11;</span>
-<span class="cstat-no" title="statement not covered" >            if (DivisionResult === 0) {</span>
-<span class="cstat-no" title="statement not covered" >                return("ISBN Validado para 10 digitos");</span>
+            let DivisionResult = sum % 11;
+            <span class="missing-if-branch" title="else path not taken" >E</span>if (DivisionResult === 0) {
+                return("ISBN Valido para 10 digitos");
             }else{
 <span class="cstat-no" title="statement not covered" >                return('ISBN Invalido')</span>
             }
-    
-    }else <span class="cstat-no" title="statement not covered" >if(Value === 13){</span>
-<span class="cstat-no" title="statement not covered" >        return 'ISBN of 13 Digit';</span>
-    }
-    // console.log("Quocient" +DivisionResult);
+    //console.log("Quocient" +DivisionResult);
 }
-&nbsp;
 // console.log(ValidateAnISBN('817525766-0'));
-&nbsp;
-module.export = ValidateAnISBN;</pre></td></tr></table></pre>
+module.exports = ValidateAnISBN10;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Sep 17 2021 23:36:06 GMT-0400 (Atlantic Standard Time)
+                at Sat Sep 18 2021 00:58:29 GMT-0400 (Atlantic Standard Time)
             </div>
         </div>
         <script src="prettify.js"></script>
