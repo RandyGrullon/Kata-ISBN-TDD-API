@@ -1,22 +1,21 @@
-const Validate = require("../Main_Code")
+const Validate = require("../Main_Code");
 
+test('ISBN null Exception ', () => {
+    expect(Validate(null)).toBe('Null Exception');
+});
 
-test('ISBN Null Expected',()=>{
-    expect(Validate(null)).toBe('Null Exception')
-})
+test('ISBN Empty', () => {
+    expect(Validate(" ")).toBe(' ');
+});
 
-test('ISBN Empty',()=>{
-    expect(Validate(" ")).toBe(' ')
-})
+test('ISBN Int To Empty', () => {
+    expect(Validate(9347856234)).toBe(' ');
+});
 
-test('ISBN int imput',()=>{
-    expect(Validate(2342356)).toBe(' ')
-})
+test('ISBN 10 digit validation', () => {
+    expect(Validate('0-7167-0344-0')).toBe('ISBN is Valid For 10 digits');
+});
 
-test('ISBN 10 digit Validation',()=>{
-    expect(Validate('0-7167-0344-0')).toBe('ISBN Valido para 10 digitos')
-})
-
-test('ISBN 13 digit Validation',()=>{
-    expect(Validate('978-0-7167-0344-0')).toBe('ISBN Valido para 13 digitos')
-})
+test('ISBN 13 digit validation', () => {
+    expect(Validate('978-0-7167-0344-0')).toBe('ISBN is Valid For 13 digits');
+});
