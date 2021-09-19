@@ -16,6 +16,7 @@
             }
         }
 
+        
     const Isbn13DigitValidation = (ISBN) => {
         const Digit = Array.from(ISBN);
         let sumAlt = 0;
